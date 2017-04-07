@@ -8,19 +8,33 @@
     <!-- BootStrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
     <div id="app">
-        <h1>{{message}}</h1>
-    <div>
+        <h1 v-cloak v-if='viewed' v-text='message'></h1> <!-- If viewed == true then v-text -->
+        <h1 v-cloak v-else v-html='intro'></h1> <!-- else then v-html-->
+        <h1 v-cloak v-pre>{{message}}</h1> <!-- Dose not render the brackets Output = {{message}} -->
+        <h1 v-cloak v-once>{{message}}</h1> <!-- Only render this one time / its like a constant cant be rendered after in the browser-->
 
+        <!-- This directive will remain on the element until the associated Vue instance finishes compilation. 
+        Combined with CSS rules such as [v-cloak] { display: none }, 
+        this directive can be used to hide un-compiled mustache bindings until the Vue instance is ready. -->
+
+    <div>
 <script src="https://unpkg.com/vue"></script>
 <script>
     var app = new Vue({
         el: '#app',
         data: {
-            message: 'Chris ist der Boss'
+            message: 'Chris ist der Boss',
+            intro: 'Welcome to the Bossland <small>Its all about vue.js</small>',
+            viewed:false
         }
     });
 
