@@ -1,7 +1,7 @@
 # [Vue js](https://vuejs.org/v2/guide/)
 For two future student project I will need to learn vue js. So at the same time, I will take the time to document everthing I learned, as good as possible.
 
-# Basic Directives
+# Basic Directives [Go to Vue directives](https://vuejs.org/v2/guide/)
 `v-text` = The same like bindig with double curly brackets `<h1>{{message}}</h1>` or `<h1 v-text='message'></h1>`
 
 `v-html` = With v-html it is possbible to add some HTML-Tag with the message it self.
