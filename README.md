@@ -17,6 +17,18 @@ For two future student project I will need to learn vue js. So at the same time,
 `v-cloak` = This directive will remain on the element until the associated Vue instance finishes compilation. Combined with CSS rules such as `[v-cloak] { display: none }`, this directive can be used to hide un-compiled mustache bindings until the Vue instance is ready.
 
 
-![bildschirmfoto 2017-04-07 um 23 03 14](https://cloud.githubusercontent.com/assets/22995847/24819834/92f33f0e-1be6-11e7-938b-46805b680d0b.png)
-Picture of all directive I used so far.
+<img width="600" alt="bildschirmfoto 2017-04-09 um 21 46 19" src="https://cloud.githubusercontent.com/assets/22995847/24840465/04f64f1e-1d6e-11e7-9a8b-ce0efd439e76.png">
+
+
+# v-bind
+`v-bind` = This directive is used to bind attributes to the HTML-Tag. Like `v-bind:url=""` `v-bind:alt=""` `v-bind:title=""` an so on.
+
+# v-for
+`v-for` = This directive is used to loop through an array or a JSON-Object. It is pretty much the same like a foreach-loop. Here is an example syntax: `<li v-for="todo in todos">{{todo.text}}</li>` and in this case the JSON-Onject that is retunred from the data object ist called todos and has a field called text. For every todo in todos it will append a list item with the name of the todo.
+
+
+# 2-way binding
+`v-model` = `<h1>{{ message }}</h1>` `<input type="text" v-model="message"/>` What ever you type in this input it will be bind to the `<h1>`
+
+<img width="350" alt="bildschirmfoto 2017-04-09 um 21 43 10" src="https://cloud.githubusercontent.com/assets/22995847/24840446/97e17098-1d6d-11e7-98c0-e922c8ce37cd.png">
 
