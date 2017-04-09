@@ -17,7 +17,7 @@ For two future student project I will need to learn vue js. So at the same time,
 `v-cloak` = This directive will remain on the element until the associated Vue instance finishes compilation. Combined with CSS rules such as `[v-cloak] { display: none }`, this directive can be used to hide un-compiled mustache bindings until the Vue instance is ready.
 
 
-<img width="600" alt="bildschirmfoto 2017-04-09 um 21 46 19" src="https://cloud.githubusercontent.com/assets/22995847/24840465/04f64f1e-1d6e-11e7-9a8b-ce0efd439e76.png">
+<img width="400" alt="bildschirmfoto 2017-04-09 um 21 49 05" src="https://cloud.githubusercontent.com/assets/22995847/24840506/8044e928-1d6e-11e7-9d60-1a86832ca05b.png">
 
 
 # v-bind
