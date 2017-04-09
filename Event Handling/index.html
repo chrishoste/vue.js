@@ -14,24 +14,25 @@
 </head>
 <body>
     <div id="app">
-        <h1>Hello {{fullname}}</h1> 
-        <input v-model="firstName"/>
-        <input v-model="lastName"/>
+        <button v-on:click="countUp" class="btn btn-primary">Count Up</button>
+        <button @click="countDown" class="btn btn-primary">Count Down!</button>
+         <h1> Count: {{count}}</h1> 
     </div>
 <script src="https://unpkg.com/vue"></script>
 <script>
     var app = new Vue({
         el: '#app',
         data: {
-            firstName: '',
-            lastName: ''
+            count: 0
         },
-        computed:{
-            fullname: function(){
-                return this.firstName + ' ' + this.lastName 
+        methods:{
+            countUp: function(){
+                this.count += 1;
+            },
+            countDown: function(){
+                this.count -= 1;
             }
         }
-
     });
 
 </script>

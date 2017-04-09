@@ -14,24 +14,16 @@
 </head>
 <body>
     <div id="app">
-        <h1>Hello {{fullname}}</h1> 
-        <input v-model="firstName"/>
-        <input v-model="lastName"/>
+         <h1>{{message}}</h1>
+         <input v-model='message'/> 
     </div>
 <script src="https://unpkg.com/vue"></script>
 <script>
     var app = new Vue({
         el: '#app',
         data: {
-            firstName: '',
-            lastName: ''
-        },
-        computed:{
-            fullname: function(){
-                return this.firstName + ' ' + this.lastName 
-            }
+            message: 'Hello'
         }
-
     });
 
 </script>
