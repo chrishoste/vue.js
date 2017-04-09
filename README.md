@@ -42,3 +42,6 @@ For two future student project I will need to learn vue js. So at the same time,
 ### Computed Properties
 
 <img width="400" alt="bildschirmfoto 2017-04-09 um 22 16 25" src="https://cloud.githubusercontent.com/assets/22995847/24840705/328ff778-1d72-11e7-9b5a-0c2a8c60aed2.png">
+
+#### Setter/Getter
+<img width="400" alt="bildschirmfoto 2017-04-09 um 22 48 33" src="https://cloud.githubusercontent.com/assets/22995847/24840882/b248e70a-1d76-11e7-8ab3-9623ea2fdda4.png">
